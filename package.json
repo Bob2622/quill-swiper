@@ -1,8 +1,8 @@
 {
   "name": "quill-swiper",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "swiper for quill",
-  "main": "dist/swiperBlot.js",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
