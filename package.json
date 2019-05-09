@@ -1,0 +1,40 @@
+{
+  "name": "quill-swiper",
+  "version": "1.0.0",
+  "description": "swiper for quill",
+  "main": "dist/swiperBlot.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/babel src/swiperBlot.js --out-dir dist && lessc src/swiperBlot.less dist/siperBlot.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bob2622/quill-swiper.git"
+  },
+  "keywords": [
+    "quill",
+    "swiper"
+  ],
+  "author": "pisces2622",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bob2622/quill-swiper/issues"
+  },
+  "homepage": "https://github.com/Bob2622/quill-swiper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "hyperx": "^2.5.4",
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "less": "^3.9.0"
+  }
+}
