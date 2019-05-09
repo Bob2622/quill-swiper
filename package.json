@@ -7,7 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "build": "node_modules/.bin/babel src/swiperBlot.js --out-dir dist && lessc src/swiperBlot.less dist/siperBlot.css"
+    "build:js": "node_modules/.bin/babel src --minified --no-comments --delete-dir-on-start -d dist",
+    "rename:js": "mv dist/swiperBlot.js dist/index.js",
+    "build:css": "lessc src/swiperBlot.less dist/index.css",
+    "build": "npm run build:js && npm run rename:js && npm run build:css",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",

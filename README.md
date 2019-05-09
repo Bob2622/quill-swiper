@@ -10,7 +10,7 @@ npm i quill-swiper swiper quill --save
 // import css
 import SwiperCss from 'swiper/dist/css/swiper.min.css'
 import Snow from 'quill/dist/quill.snow.css'
-import Snow from 'quill-swiper/dist/swpierBlot.css'
+import Snow from 'quill-swiper/dist/index.css'
 
 // import js
 import SwpierBlot from 'quill-swiper'
