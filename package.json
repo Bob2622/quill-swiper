@@ -1,6 +1,6 @@
 {
   "name": "quill-swiper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "swiper for quill",
   "main": "dist/index.js",
   "directories": {
@@ -10,8 +10,7 @@
     "build:js": "node_modules/.bin/babel src --minified --no-comments --delete-dir-on-start -d dist",
     "rename:js": "mv dist/swiperBlot.js dist/index.js",
     "build:css": "lessc src/swiperBlot.less dist/index.css",
-    "build": "npm run build:js && npm run rename:js && npm run build:css",
-    "publish": "npm publish"
+    "build": "npm run build:js && npm run rename:js && npm run build:css"
   },
   "repository": {
     "type": "git",
