@@ -68,7 +68,6 @@ export default {
   width: 100%;
   height: 600px;
   .swiper-container {
-    display: inline-block;
     width: 100%;
     height: 200px;
   }
