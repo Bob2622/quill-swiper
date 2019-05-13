@@ -163,17 +163,14 @@ class SwpierBlot extends BlockEmbed {
   }
 }
 
-
-
 // trigger swiper blot
 const trigger = function (res, uploadResFormat, fileInput) {
   let range = this.quill.getSelection(true)
-  this.quill.insertText(range.index, '\n', Quill.sources.SILENT)
+  this.quill.insertText(range.index, '\n', Quill.sources.API)
   let _res = uploadResFormat(res)
   this.quill.insertEmbed(range.index + 1, 'swiper', {
     imgs: _res
-  }, Quill.sources.SILENT)
-  this.quill.setSelection(range.index + 2, Quill.sources.SILENT)
+  }, Quill.sources.API)
   fileInput.value = ""
 }
 

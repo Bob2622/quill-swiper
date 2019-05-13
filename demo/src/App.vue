@@ -49,6 +49,9 @@ export default {
       },
       theme: 'snow'
     })
+    this.quill.on('text-change', () => {
+      console.log('text-change')
+    })
   }
 }
 </script>
